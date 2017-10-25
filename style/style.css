@@ -1,14 +1,26 @@
 /* project-common */
 @font-face{
 	font-family: pt_sans;
-	src: url(../fonts/PT_Sans-Web-Regular.ttf) format("woff2");
+	src: url(../fonts/PTSansRegular/PTSansRegular.eot) format("eot");
+	src: url(../fonts/PTSansRegular/PTSansRegular.ttf) format("ttf");
+	src: url(../fonts/PTSansRegular/PTSansRegular.woff) format("woff");
 	font-weight: normal;
 }
 
 @font-face{
 	font-family: pt_sans;
-	src: url(../fonts/PT_Sans-Web-Bold.ttf) format("woff2");
+	src: url(../fonts/PTSansBold/PTSansBold.eot) format("eot");
+	src: url(../fonts/PTSansBold/PTSansBold.ttf) format("ttf");
+	src: url(../fonts/PTSansBold/PTSansBold.woff) format("woff2");
 	font-weight: bold;
+}
+
+@font-face{
+	font-family: pt_sans;
+	src: url(../fonts/PTSansItalic/PTSansItalic.eot) format("eot");
+	src: url(../fonts/PTSansItalic/PTSansItalic.ttf) format("ttf");
+	src: url(../fonts/PTSansItalic/PTSansItalic.woff) format("woff2");
+	font-style: italic;
 }
 
 @font-face{
@@ -312,6 +324,11 @@ a.vk-sprite {
 	font-size: 16px;
 }
 
+.advantages .col4 {
+	padding-right: 19px;
+	padding-bottom: 19px;
+}
+
 .advantages h3 {
 	display: block;
 	text-align: center;
@@ -362,6 +379,10 @@ h3.icon6:before {
 	background-size: cover;
 	text-align: center;
 	color: white;
+}
+
+.sales h2{
+	padding-top: 30px;
 }
 
 .sales .col4{
