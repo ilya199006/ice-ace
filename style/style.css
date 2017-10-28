@@ -25,13 +25,13 @@
 
 @font-face{
 	font-family: futura;
-	src: url(../fonts/FUTURAREGULAR.TTF) format("woff2");
+	src: url(../fonts/Futura/FUTURAREGULAR.TTF) format("ttf");
 	font-weight: normal;
 }
 
 @font-face{
 	font-family: futura;
-	src: url(../fonts/FUTURAPTBOLD.OTF) format("woff2");
+	src: url(../fonts/Futura/FUTURAPTBOLD.OTF) format("otf");
 	font-weight: bold;
 }
 
