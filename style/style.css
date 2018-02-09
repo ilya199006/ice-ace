@@ -1,6 +1,6 @@
 /* project-common */
 @font-face{
-	font-family: pt_sans;
+	font-family: 'pt_sans';
 	src: url(../fonts/PTSansRegular/PTSansRegular.eot) format("eot");
 	src: url(../fonts/PTSansRegular/PTSansRegular.ttf) format("ttf");
 	src: url(../fonts/PTSansRegular/PTSansRegular.woff) format("woff");
@@ -8,7 +8,7 @@
 }
 
 @font-face{
-	font-family: pt_sans;
+	font-family: 'pt_sans';
 	src: url(../fonts/PTSansBold/PTSansBold.eot) format("eot");
 	src: url(../fonts/PTSansBold/PTSansBold.ttf) format("ttf");
 	src: url(../fonts/PTSansBold/PTSansBold.woff) format("woff2");
@@ -16,7 +16,7 @@
 }
 
 @font-face{
-	font-family: pt_sans;
+	font-family: 'pt_sans';
 	src: url(../fonts/PTSansItalic/PTSansItalic.eot) format("eot");
 	src: url(../fonts/PTSansItalic/PTSansItalic.ttf) format("ttf");
 	src: url(../fonts/PTSansItalic/PTSansItalic.woff) format("woff2");
@@ -24,15 +24,51 @@
 }
 
 @font-face{
-	font-family: futura;
-	src: url(../fonts/Futura/FUTURAREGULAR.TTF) format("ttf");
-	font-weight: normal;
+	font-family: 'FuturaPT-Book';
+	src: url(../fonts/FuturaPT-Book/FuturaPT-Book.eot?) format("eot");
+	src: url(../fonts/FuturaPT-Book/FuturaPT-Book.woff) format("woff");
+	src: url(../fonts/FuturaPT-Book/FuturaPT-Book.ttf) format("truetype");
+	font-weight: 400;
 }
 
 @font-face{
-	font-family: futura;
-	src: url(../fonts/Futura/FUTURAPTBOLD.OTF) format("otf");
-	font-weight: bold;
+	font-family: 'FuturaPT-Medium';
+	src: url(../fonts/FuturaPT-Medium/FuturaPT-Medium.eot?) format("eot");
+	src: url(../fonts/FuturaPT-Medium/FuturaPT-Medium.woff) format("woff");
+	src: url(../fonts/FuturaPT-Medium/FuturaPT-Medium.ttf) format("truetype");
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: 'FuturaPT-Demi';
+	src: url(../fonts/FuturaPT-Demi/FuturaPT-Demi.eot?) format("eot");
+	src: url(../fonts/FuturaPT-Demi/FuturaPT-Demi.woff) format("woff");
+	src: url(../fonts/FuturaPT-Demi/FuturaPT-Demi.ttf) format("truetype");
+	font-weight: 600;
+}
+
+@font-face{
+	font-family: 'FuturaPT-Bold';
+	src: url(../fonts/FuturaPT-Bold/FuturaPT-Bold.eot?) format("eot");
+	src: url(../fonts/FuturaPT-Bold/FuturaPT-Bold.woff) format("woff");
+	src: url(../fonts/FuturaPT-Bold/FuturaPT-Bold.ttf) format("truetype");
+	font-weight: 700;
+}
+
+@font-face{
+	font-family: 'FuturaPT-ExtraBold';
+	src: url(../fonts/FuturaPT-ExtraBold/FuturaPT-ExtraBold.eot?) format("eot");
+	src: url(../fonts/FuturaPT-ExtraBold/FuturaPT-ExtraBold.woff) format("woff");
+	src: url(../fonts/FuturaPT-ExtraBold/FuturaPT-ExtraBold.ttf) format("truetype");
+	font-weight: 800;
+}
+
+@font-face{
+	font-family: 'FuturaPT-Heavy';
+	src: url(../fonts/FuturaPT-Heavy/FuturaPT-Heavy.eot?) format("eot");
+	src: url(../fonts/FuturaPT-Heavy/FuturaPT-Heavy.woff) format("woff");
+	src: url(../fonts/FuturaPT-Heavy/FuturaPT-Heavy.ttf) format("truetype");
+	font-weight: 900;
 }
 
 * {
@@ -44,7 +80,7 @@
 
 body{
 	font-family: pt_sans;
-	min-width: 1000px;
+	max-width: 1280px;
 }
 
 	
@@ -81,11 +117,12 @@ body{
 	padding: 10px 20px;
 	color: #77e3ab;
 	text-decoration: none;
-	font-family: futura;
-	font-size: 16px;
+	font-family: 'FuturaPt-Heavy';
+	font-size: 15px;
 	-webkit-transition: background-color, color .2s ease;
 	-o-transition: background-color, color .2s ease;
 	transition: background-color, color .2s ease;
+	text-transform: uppercase;
 }
 
 .btn:hover {
@@ -112,20 +149,21 @@ li {
 	display: inline-block;
 }
 
-h1, h2, h3, h4{
-	font-family: futura;
-	font-weight: bold;
-}
-
-h2 {font-size: 36px; text-align: center;}
-h3 {font-size: 20px;}
-p {font-size: 14px; font-weight: bold;}
-span {font-size: 14px;}
+h2 {font-family: 'FuturaPT-Demi'; font-size: 40px; text-align: center;}
+h3 {font-family: 'FuturaPT-Medium'; font-size: 20px;}
+p {font-family: 'pt_sans'; font-size: 15px; /*font-weight: bold;*/}
+span {font-family: 'pt_sans'; font-size: 15px;}
 
 	/* header*/
+
 .header-bottom {
 	padding-top: 2%;
 	padding-bottom: 2%;
+}
+
+header [class*="col"]{
+	vertical-align: middle;
+	text-align: center;
 }
 
 a.logo {
@@ -137,13 +175,23 @@ a.logo {
 
 nav {
 	display: inline-block;
-	font-family: futura;
-	font-size: 14px;
+	font-family: 'FuturaPT-Demi';
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.header-bottom nav ul {
+	text-align: left;
 
 }
 
-nav li {
-	padding-left: 5%;
+.header-bottom nav li {
+	padding-right: 42px;
+	vertical-align: top;
+}
+
+.header-bottom nav li:last-child {
+	padding-right: 0px;
 }
 
 .header-bottom nav a:hover {
@@ -156,18 +204,42 @@ nav li {
 
 .header-bottom nav span {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 15px;
+	font-family: 'FuturaPT-Demi';
 	border-bottom: 3px solid #77e3ab;
 }
 
 .phone{
-	font-size: 16px;
-	font-weight: bold;
+	font-family: 'FuturaPT-Demi';
+	font-size: 22px;
+	margin-left: 15px;
 }
 
-header [class*="col"]{
-	vertical-align: middle;
-	text-align: center;
+	/* promo */
+
+.promo{
+	padding-top: 100px;
+	padding-bottom: 350px;
+	background-image: url(../img/promo.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;	/*растягивает на весь блок*/
+	background-position: center bottom;
+	color: #fff;
+	text-align: left;
+}
+
+
+.promo h1 {
+	font-family: 'FuturaPT-Bold';
+	font-size: 50px;
+	width: 50%;
+}
+
+.promo span{
+	margin-top: 30px;
+	display: block;
+	font-family: 'FuturaPT-Demi';
+	font-size: 38px;
 }
 
 	/*footer*/
@@ -219,51 +291,26 @@ a.vk-sprite {
 
 .footer-top-links {
 	text-align: right;
-	font-family: futura;
-	font-weight: bold;
-	font-size: 18px;
+	font-family: 'FuturaPT-Demi';	
 }
+
+.footer-top-links a:first-child {font-size: 22px;}
+.footer-top-links a:last-child {font-size: 20px;}
 
 .footer-bottom {
 	padding-top: 5%;
 }
 
 .footer-bottom p{
-	font-family: futura;
-	font-weight: bold;
+	font-family: 'FuturaPT-Demi';
+	font-size: 15px;
 }
 
 .footer-bottom nav{
 	text-align: right;
 }
+
 /* index.html */
-
-	/* promo */
-
-.promo{
-	padding-top: 100px;
-	padding-bottom: 350px;
-	background-image: url(../img/promo.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;	/*растягивает на весь блок*/
-	background-position: center bottom;
-	color: #fff;
-	text-align: left;
-	font-family: futura;
-}
-
-
-.promo h1 {
-	font-size: 50px;
-	width: 50%;
-}
-
-.promo span{
-	margin-top: 30px;
-	display: block;
-	font-size: 38px;
-}
-
 
 	/* section.info */
 
@@ -291,18 +338,21 @@ a.vk-sprite {
 }
 
 .note h3{
-	margin: 0%;
+	margin: 0;
 	
+}
+
+.note-bottom {
+	display: block;
+	margin-top: 50px;
 }
 
 .note span{
 	display: inline-block;
 	width: 90%;
-	font-size: 16px;
-	font-family: futura;
-	font-weight: bold;
+	font-family: 'FuturaPT-Medium';
+	font-size: 20px;
 	vertical-align: middle;
-
 }
 
 .arrow {
@@ -345,33 +395,35 @@ a.vk-sprite {
 	background-image: url(../img/sprite.png);
 }
 
-h3.icon1:before {
+.icon1:before {
 	background-position: -179px -95px;
 }
 
-h3.icon2:before {
+.icon2:before {
 	background-position: -226px -5px;
 }
 
-h3.icon3:before {
+.icon3:before {
 	background-position: -136px -5px;
 }
 
-h3.icon4:before {
+.icon4:before {
 	background-position: -89px -95px;
 }
 
-h3.icon5:before {
+.icon5:before {
 	background-position: -5px -185px;
 }
 
-h3.icon6:before {
+.icon6:before {
 	background-position: -46px -5px;
 }
+
 	/* section.sales */
 
+
 .sales {
-	height: 331px;
+	/*height: 331px;*/
 	background: url(../img/img_baground_index_sale.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -397,7 +449,7 @@ h3.icon6:before {
 
 .crew {
 	
-	height: 731px;
+	/*height: 731px;*/
 	background: url(../img/img_index_team.jpg) no-repeat center;
 	text-align: center;
 }
@@ -482,11 +534,12 @@ td a {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	font-family: futura;
+	font-family: 'FuturaPt-Heavy';
 	color: #77e3ab;
 	-webkit-transition: background-color .2s ease;
 	-o-transition: background-color .2s ease;
 	transition: color .2s ease;
+	text-transform: uppercase;
 }
 
 td:nth-of-type(6):hover {
