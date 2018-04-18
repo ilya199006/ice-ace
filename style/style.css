@@ -157,13 +157,12 @@ span {font-family: 'pt_sans'; font-size: 15px;}
 	/* header*/
 
 .header-bottom {
-	padding-top: 2%;
-	padding-bottom: 2%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 header [class*="col"]{
-	vertical-align: middle;
-	text-align: center;
+	/*vertical-align: top;*/
 }
 
 a.logo {
@@ -182,23 +181,28 @@ nav {
 
 .header-bottom nav ul {
 	text-align: left;
-
 }
 
 .header-bottom nav li {
 	padding-right: 42px;
-	vertical-align: top;
 }
 
 .header-bottom nav li:last-child {
 	padding-right: 0px;
 }
 
+.header-bottom nav a {
+	display: inline-block;
+	padding-bottom: 6px;
+}
+
 .header-bottom nav a:hover {
+	display: inline-block;
 	border-bottom: 3px solid #77e3ab;
 }
 
 .header-bottom nav a:active {
+	display: inline-block;
 	border-bottom: 3px solid #77e3ab;
 }
 
@@ -207,12 +211,19 @@ nav {
 	font-size: 15px;
 	font-family: 'FuturaPT-Demi';
 	border-bottom: 3px solid #77e3ab;
+	padding-bottom: 6px;
 }
 
 .phone{
+	display: inline-block;
 	font-family: 'FuturaPT-Demi';
 	font-size: 22px;
-	margin-left: 15px;
+	margin-top: 10px;
+	margin-left: 17px;
+}
+
+.header-bottom a.btn {
+	margin-left: 30px;
 }
 
 	/* promo */
@@ -245,7 +256,6 @@ nav {
 	/*footer*/
 
 footer {
-	/*height: 344px;*/
 	background: url(../img/img_instructors_review.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -294,11 +304,12 @@ a.vk-sprite {
 	font-family: 'FuturaPT-Demi';	
 }
 
-.footer-top-links a:first-child {font-size: 22px;}
-.footer-top-links a:last-child {font-size: 20px;}
+.footer-top-links a:first-child {display: block; font-size: 22px; margin-bottom: 12px;}
+.footer-top-links a:last-child {display: block; font-size: 20px;}
 
 .footer-bottom {
-	padding-top: 5%;
+	padding-top: 30px;
+	padding-bottom: 100px;
 }
 
 .footer-bottom p{
@@ -308,6 +319,9 @@ a.vk-sprite {
 
 .footer-bottom nav{
 	text-align: right;
+}
+.footer-bottom nav li{
+	margin-left: 70px;
 }
 
 /* index.html */
@@ -368,22 +382,15 @@ a.vk-sprite {
 
 	/* section.advantages */
 
-.advantage {
-	display: block;
-	text-align: center;
-	font-size: 16px;
-}
-
-.advantages .col4 {
-	padding-right: 19px;
-	padding-bottom: 19px;
-}
-
 .advantages h3 {
 	display: block;
 	text-align: center;
-	font-size: 16px;
-	margin: 0 auto;
+	font-size: 20px;
+}
+
+[class*=icon] {
+	padding-right: 40px;
+	margin-bottom: 50px;
 }
 
 [class*=icon]:before{
@@ -419,6 +426,10 @@ a.vk-sprite {
 	background-position: -46px -5px;
 }
 
+.advantages p {
+	font-size: 15px;
+}
+
 	/* section.sales */
 
 
@@ -444,14 +455,18 @@ a.vk-sprite {
 .sales span{
 	color: #77e3ab;
 }
-
+.sales .btn {
+	margin-top: 34px;
+	margin-bottom: 34px;
+}
 	/* section.crew */
 
+
 .crew {
-	
-	/*height: 731px;*/
 	background: url(../img/img_index_team.jpg) no-repeat center;
 	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 90px;
 }
 
 .crew .container {
@@ -460,23 +475,27 @@ a.vk-sprite {
 }
 
 .crew p {
-	padding-top: 400px;
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-bottom: 30px;
+	margin-top: 500px;
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-bottom: 70px;
 }
 
 	/* section.community */
 
 
 .community p {
-	padding-left: 10%;
-	padding-right: 10%;
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-bottom: 40px;
 }
 
 	/* section.instagram */
 
 .instagram {
+	margin-top: 80px;
+	margin-bottom: 58px;
 	padding-bottom: 2%;
 }
 
@@ -501,16 +520,20 @@ a.vk-sprite {
 table {
 	width: 100%;
 	border-collapse: collapse;
-	font-size: 14px;
 }
 
 th{
 	text-align: left;
+	padding-bottom: 10px;
+	font-family: 'FuturaPT-Medium';
+	font-size: 20px;
 }
 
 td {
 	border: 1px solid;
 	padding: 1%;
+	font-family: 'pt_sans';
+	font-size: 15px;
 }
 
 td:nth-of-type(2n-1), td:nth-of-type(4) {
@@ -553,7 +576,7 @@ td:nth-of-type(6):hover a{
 	/* section.choise */
 
 .choise {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .choise .row{
@@ -564,8 +587,9 @@ td:nth-of-type(6):hover a{
 .choise-avatar {
 	display: inline-block;
 	width: 22.66%;
-	padding-left: 5%;
-	padding-top: 1%;
+	padding-left: 50px;
+	padding-right: 20px;
+	padding-top: 50px;
 }
 
 .choise-avatar img {
@@ -582,7 +606,7 @@ td:nth-of-type(6):hover a{
 	padding-top: 1%;
 	padding-bottom: 1%;
 	text-align: center;
-	font-family: futura;
+	font-family: 'FuturaPT-Book';
 	background-color: #000;
 	color: #fff;
 	position: relative;
@@ -596,15 +620,20 @@ td:nth-of-type(6):hover a{
 	vertical-align: top;
 }
 
+.choise-content h3 {
+	font-family: 'FuturaPT-Demi';
+	font-size: 30px;
+	margin-bottom: -10px;
+}
+
 .choise-content p {
 	width: 70%;
 }
 
 .choise-content span {
 	display: block;
-	font-family: futura;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'FuturaPT-Medium';
+	font-size: 20px;
 }
 
 a.learn-more {
@@ -623,9 +652,9 @@ a.learn-more {
 .choise-buy span {
 	display: block;
 	width: 100%;
-	font-family: futura;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'FuturaPT-Medium';
+	font-size: 30px;
+	margin-top: 15px;
 }
 
 .choise-buy .btn {
@@ -637,9 +666,8 @@ ul.numbers-wrap {
 }
 
 span.number, a.number {
-	font-family: futura;
-	font-size: 16px;
-	font-weight: bold;
+	font-family: 'FuturaPT-Medium';
+	font-size: 20px;
 }
 
 span.number {
@@ -659,14 +687,25 @@ span.number {
 .order-call label, input, textarea {
 	display: block;
 	text-align: left;
-	font-size: 18px;
+	font-family: 'FuturaPT-Medium';
+	font-size: 20px;
 }
 
-.feedback label{
-	font-family: futura;
+.order-call input {
+	margin-top: 10px;
+	margin-bottom: 25px;
+	border: 1px solid black;
+}
+
+.order-call textarea {
+	resize: vertical;
+	margin-top: 20px;
+	border: 1px solid black;
 }
 
 input.btn {
+	margin-top: 60px;
+	margin-bottom: 60px;
 	background-color: transparent;
 }
 
@@ -676,6 +715,11 @@ input.btn {
 	text-align: center;
 }
 
+.instructors h1 {
+	font-family: 'FuturaPT-Demi';
+	font-size: 40px;
+}
+
 .instructors form {
 	display: inline-block;
 }
@@ -683,18 +727,18 @@ input.btn {
 	/* tabs */
 
 .tabs {
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
-.tab-top-img, .tab-bottom-img {
+.tab-top, .tab-bottom-img {
 	display: inline-block;
-	width: 20%;
-	height: 180px;
-	font-size: 14px;
+	width: 234px;
+	height: 239px;
 }
 
-.tab-top-img img {
+.tab-top img {
+	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -713,30 +757,6 @@ a.tab-top-img:after {
 	top: -185px;
 	background-color: rgba(166, 166, 166, .5);
 	z-index: 2;
-}
-
-a.tab-top-img:nth-of-type(1):after {
-	content: 'Арсений Петров';
-}
-
-a.tab-top-img:nth-of-type(2):after {
-	content: 'Иван Иванов';
-}
-
-a.tab-top-img:nth-of-type(3):after {
-	content: 'Степан Александров';
-}
-
-a.tab-top-img:nth-of-type(4):after {
-	content: 'Константин Константинопольский';
-}
-
-a.tab-top-img:nth-of-type(5):after {
-	content: 'Виталий Сергеев';
-}
-
-a.tab-top-img:hover:after {
-	z-index: -5;
 }
 
 .tab-bottom-img {
@@ -787,36 +807,18 @@ a.tab-bottom-img:nth-of-type(4):after {
 a.tab-bottom-img:nth-of-type(5):after {
 	content: 'Дмитрий Егоров';
 }
-/*.tab-img:active:after {
-	display: inline-block;
-	content: '';
-	width: 100%;
-	height: 180px;
-	position: relative;
-	top: -185px;
-	background-color: rgba(119, 227, 171, .5);
-	z-index: 5;
-}*/
 
 a.tab-bottom-img:hover:after {
 	z-index: -5;
 }
 
-/*
-.tabs:nth-child(1) a:active:after {
-	content: '';
-	width: 100%;
-	height: 180px;
-	position: relative;
-	top: -185px;
-	background-color: rgba(119, 227, 171, .5);
-	z-index: 5;
-}
-*/
-
 
 
 	/*instructor-top*/
+.instructor-top {
+	margin-left: 40px;
+}
+
 
 .skill-pic {
 	width: 80px;
@@ -825,12 +827,33 @@ a.tab-bottom-img:hover:after {
 	background-position: -89px -95px;
 }
 
+.instructor-top p {
+	font-family: 'FuturaPT-Medium';
+	font-size: 17px;
+}
+
+p.experience {
+	padding-left: 35px;
+}
+
+.instructor-top h2 {
+	margin-top: 0px;
+	font-size: 30px;
+	text-align: left;
+}
+
+ul.hashtags {
+	padding-left: 0px;
+}
+
 .hashtags li {
 	display: block;
+	font-family: 'FuturaPT-Medium';
+	font-size: 17px;
 }
 
 .instructor-top a.btn {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 a.thanks {
@@ -847,10 +870,19 @@ a.thanks {
 .instructor-bottom {
 	text-align: left;
 	margin-top: 5%;
+	margin-left: 40px;
+}
+
+.instructor-bottom p {
+	margin-right: 70px;
 }
 
 .youtube-video {
-	text-align: center;
+	text-align: right;
+}
+
+.youtube-video iframe {
+	margin-right: 30px;
 }
 
 	/*instructor-comments*/
@@ -860,19 +892,23 @@ a.thanks {
 	background-position: top;
 	background-size: cover;
 	text-align: left;
+	margin-left: 30px;
+	margin-top: 50px;
+	margin-right: 30px;
+	margin-bottom: 50px;
 }
 
 .instructor-comments a {
 	display: inline-block;
-	font-family: futura;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'FuturaPT-Medium';
+	font-size: 20px;
 	padding-top: 2%;
 	padding-left: 2%;
 	vertical-align: middle;
 }
 
 .instructor-comments a:after {
+	margin-left: 30px;
 	display: inline-block;
 	content: '';
 	width: 32px;
@@ -883,10 +919,11 @@ a.thanks {
 }
 
 .instructor-comments blockquote {
+	font-family: 'pt_sans';
 	font-size: 14px;
 	text-align: left;
-	font-weight: bold;
 	padding-bottom: 10%;
-	padding-right: 30%;
+	padding-right: 400px;
+	margin-left: 22px;
 }
 
