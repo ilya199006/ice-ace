@@ -194,6 +194,7 @@ nav {
 .header-bottom nav a {
 	display: inline-block;
 	padding-bottom: 6px;
+	border-bottom: 3px solid transparent;
 }
 
 .header-bottom nav a:hover {
@@ -235,6 +236,7 @@ nav {
 	-webkit-background-size: cover;
 	background-size: cover;	/*растягивает на весь блок*/
 	background-position: center bottom;
+	background-attachment: fixed;
 	color: #fff;
 	text-align: left;
 }
@@ -440,6 +442,7 @@ a.vk-sprite {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	text-align: center;
 	color: white;
 }
