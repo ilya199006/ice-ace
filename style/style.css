@@ -157,12 +157,15 @@ span {font-family: 'pt_sans'; font-size: 15px;}
 	/* header*/
 
 .header-bottom {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	background-color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-header [class*="col"]{
-	/*vertical-align: top;*/
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 a.logo {
@@ -330,8 +333,17 @@ a.vk-sprite {
 
 	/* section.info */
 
-.info{
+.info {
+	margin-top: 30px;
 	text-align: center;
+}
+
+.fixed + section.info {
+	margin-top: 100px;
+}
+
+.info h2 {
+	margin-top: 0;
 }
 
 .note {
